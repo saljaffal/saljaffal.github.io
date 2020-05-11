@@ -650,18 +650,18 @@ header div .shop:hover, header div .shop:focus {
   position: absolute;
 }
 
-.row_3 ul li .chains {
+.row_3 ul li .img_1 {
   margin-top: -30%;
 }
 
-.row_3 ul li .ring {
+.row_3 ul li .img_2 {
   margin-top: -75%;
   margin-left: -15%;
   -webkit-transform: scale(1.4);
           transform: scale(1.4);
 }
 
-.row_3 ul li .watch {
+.row_3 ul li .img_3 {
   margin-top: -60%;
   margin-left: -13%;
   -webkit-transform: scale(1.4);
