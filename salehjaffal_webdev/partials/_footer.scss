@@ -1,0 +1,69 @@
+footer  {
+    background-color: $black;
+    h2 {
+        @include section_header($white);
+        text-align: center;
+    }
+    .wrapper_footer {
+        padding: 100px 0;
+        @include font_size(20);
+        font-family: $barlow;
+        font-weight: 400;
+        letter-spacing: 1px;
+        
+        form{
+
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            .name,
+            .email {
+                padding-top: 60px;
+                width: calc(97% / 2);
+            }
+
+            .message {
+                width: 100%;
+            }
+
+            input[type=text],
+            input[type=email]
+            {
+                width: 100%;
+                @include input_style();
+            }
+
+            #message {
+                @include input_style();
+                margin-top: 30px;
+                height: 250px;
+                width: 100%;
+            }
+
+            input[type=submit] {
+                @include button($white);
+                margin-top: 20px;
+                padding: 0 30px;
+                background-color: $black;
+                margin: 20px auto 0 auto;
+                @include font_size(25);
+            }
+        }
+    }
+    .bottom {
+        background-color: $navy;
+        font-family: $cardo;
+        padding: 10px 0;
+        @include font_size(20);
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 400;
+        
+        p {
+            margin: auto;
+            width: 5%;
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,105 @@
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 16px;
+    font-family: Pokemon, sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+    /* display: flex; */
+}
+
+@font-face {
+    font-family: Pokemon;
+    src: url(./assets/PokemonGb-RAeo.ttf) format("truetype");
+  }
+
+.wrapper {
+    max-width: 1000px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    background-color: red;
+}
+
+header img {
+    height: 100%;
+    width: 300px; 
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div img {
+    height: 100%;
+    width: 200px; 
+    height: auto;
+    align-items: center;
+    position: relative;
+}
+
+p {
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+}
+
+.attackUser {
+    left: 40px;
+    bottom: 40px;
+}
+
+.attackOppo {
+    right: 40px;
+    top: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+.opponent {
+    justify-content: end;
+}
+
+.opponent li {
+    width: 50%;
+}
+
+.user li {
+    width:400px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.user li img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.moves {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.moves li:hover {
+    background-color: blue;
+    color: white;
+}
+
+.hide {
+    display: none;
+}
+
+
+

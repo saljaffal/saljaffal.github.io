@@ -1,0 +1,60 @@
+// stripping styles
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+// save font stack
+// $font-stack: 'Kanit', sans-serif;
+
+// typography styles
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include font_size(16);
+    font-family: serif;
+    font-weight: 300;
+    // line-height: 1.5;
+}
+
+.wrapper {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper_footer {
+    max-width: 1140px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+* {
+    transition: all 0.3s ease-in;
+}
+
+main * {
+    transition: all 0.8s ease-in;
+}

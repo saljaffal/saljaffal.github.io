@@ -1,0 +1,30 @@
+.row_1 {
+    display: flex;
+    justify-content: space-around;
+    .model {
+        width: 43%;
+    }
+    img {
+        margin-top: 80px;
+        width: 100%;
+        position: relative;
+        bottom: 185px;
+        box-shadow: 30px 40px 5px $background_fade;
+    }
+    .new_arrival {
+        padding-left: 15px;
+        width: 46%;
+        margin: 100px 0;
+
+        h2 {
+            @include section_header($light_brown);
+        }
+        p {
+            @include para($black);
+            margin: 38px 0;
+        }
+        a {
+            @include button($black);
+        }
+    }
+}

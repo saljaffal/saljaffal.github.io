@@ -1,0 +1,85 @@
+header {
+    background-image: url(../assets/header-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    
+    nav {
+        display: flex;
+        align-items: center;
+        height: 15vh;
+        justify-content: space-between;
+        margin: 0 2.5%;
+    }
+
+    .main_collection {
+        padding-left: 30px;
+    }
+
+    .logo {
+        width: 10%;
+        font-family: $cardo;
+        @include font_size(35);
+        text-transform: uppercase;
+        color: $white;
+        font-weight: 400;
+    }
+
+    .top_menu {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end; 
+        list-style: none;
+        margin-right: 5%;
+        li {
+            align-self: center;
+            padding: 0 20px;
+        }
+    
+
+        a {
+            color: $white;
+            text-decoration: none;
+            font-family: $barlow;
+            font-weight: 400;
+            @include font_size(25);
+            text-transform: capitalize;
+            padding: 5px 0;
+            display: inline-block; 
+            transition: all 0.1s ease-in;
+            border-bottom: 2px hidden $orange; 
+            border-top: 2px hidden transparent; 
+            //so that it doesnt transition from white to orange for the user
+ 
+            &:hover, 
+            &:focus {
+                border-top: 2px solid transparent;
+                border-bottom: 2px solid $orange;
+            }
+        }
+    }
+
+    div {
+        flex-direction: column;
+        height: 105vh; 
+        
+        //The style sheet shows that the image is offsetting into the main page but I feel like it looked better if the main page is clear and neat and once you scroll you see the content
+
+        h1 {
+            margin: 0;
+            margin-top: 10vh;
+            @include main_header($white);
+        }
+        .shop {
+            @include button($white);
+            
+            
+        }
+    }
+}
+
+
+
+
+
